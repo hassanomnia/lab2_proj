@@ -1,4 +1,4 @@
- **Foobar**
+ **#Foobar**
 Foobar is apython library for dealing with word pluralization
   **Installation**
 Use the package manager [pip](https://linuxize.com/post/how-to-install-pip-on-centos-8/) to install foobar
