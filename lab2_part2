@@ -1,0 +1,39 @@
+● create an annoted tag with tagname v1.4.
+
+ git tag -a v1.4 -m "annoted tag to last commit"
+ git push origin v1.4
+
+
+
+
+● push it to remote server.
+
+git push origin v1.4
+
+● tell me how to list tags locally.
+
+git tag
+
+● tell me how to delete tag locally and remotely.
+
+to remove from local repo:
+git branch -d v1.4
+
+to remove from remote repo:
+git push origin :v1.4
+
+● What is git rebase? Give me an example.
+
+git rebase is used to integrate chnges of two changes.
+
+the merge command. It performs a three-way merge between the two latest branch snapshots (C3 and C4) and the most recent common ancestor of the two (C2), creating a new snapshot (and commit).
+
+With the rebase command, you can take all the changes that were committed on one branch and replay them on a different branch.
+
+This operation works by going to the common ancestor of the two branches (the one you’re on and the one you’re rebasing onto), getting the diff introduced by each commit of the branch you’re on, saving those diffs to temporary files, resetting the current branch to the same commit as the branch you are rebasing onto, and finally applying each change in turn.
+
+
+
+
+
+● README.md file. Add image at the end of README.md file
