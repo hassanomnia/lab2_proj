@@ -1,0 +1,14 @@
+
+[omnia@localhost ~]$ cd VCS_course/
+[omnia@localhost VCS_course]$ ls
+lab2             omnia      VCS_lab_1      versionControlLecture1.pdf
+lab2_submission  to_submit  VCS_lab_1.odt  versionControlLecture2.pdf
+[omnia@localhost VCS_course]$ cd to_submit/
+[omnia@localhost to_submit]$ ls -A
+'download (1).jpeg'
+[omnia@localhost to_submit]$ git init
+Initialized empty Git repository in /home/omnia/VCS_course/to_submit/.git/
+[omnia@localhost to_submit]$ ls -A
+'download (1).jpeg'   .git
+[omnia@localhost to_submit]$ 
+
