@@ -1,0 +1,86 @@
+[omnia@localhost VCS_course]$ mkdir labsub
+[omnia@localhost VCS_course]$ cd labsub
+[omnia@localhost labsub]$ git init
+Initialized empty Git repository in /home/omnia/VCS_course/labsub/.git/
+[omnia@localhost labsub]$ git add .
+[omnia@localhost labsub]$ git commit -m "committing first version"
+[master (root-commit) dab0228] committing first version
+ 1 file changed, 14 insertions(+)
+ create mode 100644 Lab2_Steps
+[omnia@localhost labsub]$ git clone git@github.com:hassanomnia/lab2_proj.git
+Cloning into 'lab2_proj'...
+warning: You appear to have cloned an empty repository.
+[omnia@localhost labsub]$ git remote -v
+[omnia@localhost labsub]$ git remote add origin https://github.com/hassanomnia/lab2_proj.git
+[omnia@localhost labsub]$ git remote -v
+origin	https://github.com/hassanomnia/lab2_proj.git (fetch)
+origin	https://github.com/hassanomnia/lab2_proj.git (push)
+[omnia@localhost labsub]$ git push origin master
+Username for 'https://github.com': omniahassan7753@gmail.com
+Password for 'https://omniahassan7753@gmail.com@github.com': 
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 432 bytes | 432.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/hassanomnia/lab2_proj.git
+ * [new branch]      master -> master
+
+
+[omnia@localhost to_submit]$ git branch dev
+[omnia@localhost to_submit]$ git branch test
+[omnia@localhost to_submit]$ git checkout dev
+Switched to branch 'dev'
+[omnia@localhost to_submit]$ touch file1
+[omnia@localhost to_submit]$ vi file1
+[omnia@localhost to_submit]$ touch file2
+[omnia@localhost to_submit]$ vi file2
+
+
+
+[omnia@localhost labsub]$ git add .
+[omnia@localhost labsub]$ git commit -m "branch push"
+[dev 4aae6a7] branch push
+ 2 files changed, 2 insertions(+)
+ create mode 100644 file1
+ create mode 100644 file2
+[omnia@localhost labsub]$ git push origin dev
+Username for 'https://github.com': omniahassan7753@gmail.com
+Password for 'https://omniahassan7753@gmail.com@github.com': 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 354 bytes | 354.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/hassanomnia/lab2_proj.git
+   dab0228..4aae6a7  dev -> dev
+
+
+ git checkout master
+Switched to branch 'master'
+[omnia@localhost labsub]$ git merge dev
+Updating dab0228..4aae6a7
+Fast-forward
+ file1 | 1 +
+ file2 | 1 +
+ 2 files changed, 2 insertions(+)
+ create mode 100644 file1
+ create mode 100644 file2
+
+
+[omnia@localhost labsub]$ git push origin master
+
+
+
+
+
+
+Tell me how to remove them locally and remotly::
+
+to remove from local repo:
+git branch -D dev
+
+to remove from remote repo:
+git push origin :dev
