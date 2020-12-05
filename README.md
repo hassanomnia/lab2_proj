@@ -17,6 +17,7 @@ please make sure to update tests as appropriate.
  ## **License**
 [MIT](https://www.mit.edu/)
  ##  Image:
-https://github.com/hassanomnia/lab2_proj/blob/master/download%20(1).jpeg"image"
+![alt text](https://github.com/hassanomnia/lab2_proj/blob/master/download%20(1).jpeg)
+
 
 
